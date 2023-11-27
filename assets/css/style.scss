@@ -44,6 +44,42 @@ header{
     .left{
         max-width: 180px;
     }
+    .a {
+        display: flex;        
+        color: $white;
+        font-size: 14px;   
+        position: relative;
+        cursor: pointer;
+        * {
+            flex-shrink: 0;
+        }
+        .icon_wrapper {
+            transform: rotate(-45deg);
+            transition: transform .2s ease-in;
+        }
+        .absoulte_block {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            min-width: 80px;
+            padding: 7px;
+            z-index: 3;
+            background: linear-gradient(128deg, rgb(250, 169, 101) 21%, rgb(242, 96, 40) 61%);
+            transform-origin: top;
+            transform: translateY(100%) scaleY(0);
+            transition: transform .2s ease-in;
+            a {
+                color: #000;
+            }
+        }
+        &:hover .icon_wrapper {
+            transform: none;
+        }
+        &:hover .absoulte_block {
+            transform: translateY(100%) scaleY(1); 
+        }
+    }
+
     .middle{
         ul{
             list-style: none;
@@ -911,6 +947,18 @@ footer{
         img{
             max-width: 200px;
         }
+    }
+    .end ul {
+        list-style: none;
+        li{
+            margin-bottom: 5px;            
+        }
+    }
+    .end a {
+        font-size: 12px;
+    }
+    .end a:hover {
+        color: $orange;
     }
     .middle{
         h3{

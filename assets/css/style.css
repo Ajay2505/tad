@@ -36,6 +36,41 @@ header {
 header .left {
   max-width: 180px;
 }
+header .a {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+header .a * {
+  flex-shrink: 0;
+}
+header .a .icon_wrapper {
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease-in;
+}
+header .a .absoulte_block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 80px;
+  padding: 7px;
+  z-index: 3;
+  background: linear-gradient(128deg, rgb(250, 169, 101) 21%, rgb(242, 96, 40) 61%);
+  transform-origin: top;
+  transform: translateY(100%) scaleY(0);
+  transition: transform 0.2s ease-in;
+}
+header .a .absoulte_block a {
+  color: #000;
+}
+header .a:hover .icon_wrapper {
+  transform: none;
+}
+header .a:hover .absoulte_block {
+  transform: translateY(100%) scaleY(1);
+}
 header .middle ul {
   list-style: none;
   display: flex;
@@ -870,6 +905,18 @@ footer .left {
 }
 footer .left img {
   max-width: 200px;
+}
+footer .end ul {
+  list-style: none;
+}
+footer .end ul li {
+  margin-bottom: 5px;
+}
+footer .end a {
+  font-size: 12px;
+}
+footer .end a:hover {
+  color: #f27221;
 }
 footer .middle h3 {
   font-family: "qualey_freeregular";
