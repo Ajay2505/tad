@@ -946,6 +946,38 @@ footer{
             margin-top: 20px;
             li{
                 font-size: 12px;
+                a, div.a {
+                    display: flex;
+                    position: relative;                    
+                    flex-wrap: nowrap;
+                    &:hover {
+                        color: $orange;
+                    }
+                    cursor: pointer;
+                    .icon_wrapper {
+                        transform: rotate(-45deg);
+                        transition: transform .2s ease-in;
+                    }
+                    .absoulte_block {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        min-width: 80px;
+                        padding: 7px;
+                        border-radius: 5px;
+                        color: #000;
+                        background-color: #fff;
+                        transform-origin: top;
+                        transform: translateY(100%) scaleY(0);
+                        transition: transform .2s ease-in;
+                    }
+                    &:hover .icon_wrapper {
+                        transform: none;
+                    }
+                    &:hover .absoulte_block {
+                        transform: translateY(100%) scaleY(1); 
+                    }
+                }
             }
         }
     }

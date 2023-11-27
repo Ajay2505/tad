@@ -906,6 +906,38 @@ footer .middle ul {
 footer .middle ul li {
   font-size: 12px;
 }
+footer .middle ul li a, footer .middle ul li div.a {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+footer .middle ul li a:hover, footer .middle ul li div.a:hover {
+  color: #f27221;
+}
+footer .middle ul li a .icon_wrapper, footer .middle ul li div.a .icon_wrapper {
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease-in;
+}
+footer .middle ul li a .absoulte_block, footer .middle ul li div.a .absoulte_block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 80px;
+  padding: 7px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  transform-origin: top;
+  transform: translateY(100%) scaleY(0);
+  transition: transform 0.2s ease-in;
+}
+footer .middle ul li a:hover .icon_wrapper, footer .middle ul li div.a:hover .icon_wrapper {
+  transform: none;
+}
+footer .middle ul li a:hover .absoulte_block, footer .middle ul li div.a:hover .absoulte_block {
+  transform: translateY(100%) scaleY(1);
+}
 
 .max-lines {
   display: -webkit-box;
