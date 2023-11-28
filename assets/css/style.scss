@@ -140,6 +140,8 @@ header{
             }
             h2{
                 font-family: $qualey;
+                text-transform: uppercase;
+                line-height: .97;
                 font-size: clamp(30px, 8vw, 170px);
                 overflow: hidden;
                 @media only screen and (min-width: 1904px) {
@@ -163,8 +165,10 @@ header{
             }
             .diagonal_strip{
                 position: absolute;
-                right: 0;
-                top: 60px;
+                // right: 0;
+                // top: 60px;
+                right: -45px;
+                top: 30px;
                 max-width: 250px;
                 z-index: 1;
                 .strip_content{
