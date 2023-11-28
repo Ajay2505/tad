@@ -140,7 +140,7 @@ header{
             }
             h2{
                 font-family: $qualey;
-                font-size: clamp(30px, 9vw, 200px);
+                font-size: clamp(30px, 8vw, 170px);
                 overflow: hidden;
                 @media only screen and (min-width: 1904px) {
                     font-size: clamp(30px, 8vw, 200px);
