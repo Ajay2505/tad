@@ -72,6 +72,8 @@ header{
             transform: translateY(100%) scaleY(0);
             transition: transform .2s ease-in;
             a {
+                white-space: nowrap;
+                padding-inline: 5px;
                 color: #000;
             }
         }
@@ -1930,6 +1932,32 @@ section#themoodslayboard {
                 left: auto;
                 top: auto;
             }
+        }
+    }
+}
+
+//////////////////////////////////////////////////
+////////////// Clientele //////////////////
+////////////////////////////////////////////////
+
+
+section#clientele {
+    .section_wrapper {
+        .content_wrapper {
+            max-width: 830px;            
+        }
+        h2{
+            line-height: 1;
+        }
+        .two{
+            text-align: center;
+            padding-left: 0px;
+        }
+        .diagonal_strip{
+            right: 0;
+            bottom: 0;
+            left: auto;
+            top: auto;
         }
     }
 }

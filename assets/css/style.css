@@ -65,6 +65,8 @@ header .a .absoulte_block {
   transition: transform 0.2s ease-in;
 }
 header .a .absoulte_block a {
+  white-space: nowrap;
+  padding-inline: 5px;
   color: #000;
 }
 header .a:hover .icon_wrapper {
@@ -1759,6 +1761,23 @@ section#themoodslayboard .section_wrapper .content_wrapper .two {
   text-align: left;
 }
 section#themoodslayboard .section_wrapper .content_wrapper .diagonal_strip {
+  right: 0;
+  bottom: 0;
+  left: auto;
+  top: auto;
+}
+
+section#clientele .section_wrapper .content_wrapper {
+  max-width: 830px;
+}
+section#clientele .section_wrapper h2 {
+  line-height: 1;
+}
+section#clientele .section_wrapper .two {
+  text-align: center;
+  padding-left: 0px;
+}
+section#clientele .section_wrapper .diagonal_strip {
   right: 0;
   bottom: 0;
   left: auto;
