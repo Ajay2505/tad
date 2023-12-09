@@ -343,6 +343,7 @@ header .right ul {
   border: 0.5px solid #b1b1b1;
   border-left: none;
   aspect-ratio: 1/1;
+  padding: 20px;
   transition: all 7s ease-in-out;
 }
 .sec_3 .section_wrapper .content_wrapper .right .carousel_wrapper .image_wrapper:hover {
@@ -351,8 +352,7 @@ header .right ul {
   cursor: pointer;
 }
 .sec_3 .section_wrapper .content_wrapper .right .carousel_wrapper .image_wrapper img {
-  max-width: 90px;
-  max-height: 90px;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1782,4 +1782,151 @@ section#clientele .section_wrapper .diagonal_strip {
   bottom: 0;
   left: auto;
   top: auto;
+}
+
+.row-gap-4 {
+  row-gap: 20px;
+}
+
+section#careers.sec_1 .section_wrapper h2 {
+  line-height: 1;
+}
+section#careers.sec_1 .section_wrapper .two {
+  text-align: center;
+  padding-left: 0px;
+}
+section#careers.sec_1 .section_wrapper .diagonal_strip {
+  right: 0;
+  bottom: 0;
+  left: auto;
+  top: auto;
+}
+
+#jobsWrapper .right h4.careers {
+  font-size: 18px;
+  max-width: 100%;
+}
+#jobsWrapper a.job-toggler {
+  display: block;
+  padding: 10px 14px;
+  margin-bottom: 7px;
+  border: 1px solid #f27221;
+  color: #000;
+  background: #fff;
+}
+#jobsWrapper a.job-toggler.active {
+  color: #fff;
+  background: linear-gradient(to left, #F4A662, #f27221);
+}
+#jobsWrapper #job-description {
+  scroll-margin-top: clamp(40px, 10vh, 150px);
+}
+#jobsWrapper #job-description .title {
+  font-size: 24px;
+  color: #f27221;
+}
+#jobsWrapper #job-description .breif {
+  font-size: 18px;
+}
+#jobsWrapper #job-description .job {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+#jobsWrapper #job-description .job[job-status=active] {
+  height: 100%;
+  opacity: 1;
+  transition: height 0.3s ease-in-out, opacity 0.2s ease-in-out 0.2s;
+}
+#jobsWrapper #job-description .accordion-item {
+  border: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f27221;
+}
+#jobsWrapper #job-description .accordion-item:not(:first-child) {
+  margin-top: 40px;
+}
+#jobsWrapper #job-description .accordion-item h2 {
+  display: flex;
+  gap: 20px;
+}
+#jobsWrapper #job-description .accordion-item h2 .btn:active {
+  box-shadow: none;
+}
+#jobsWrapper #job-description .accordion-item h2 button {
+  border-radius: 0;
+  color: #fff;
+  padding: 7px 14px;
+  background-color: #f27221;
+}
+#jobsWrapper #job-description .accordion-item h2 button:focus {
+  box-shadow: none;
+}
+#jobsWrapper #job-description .accordion-item h2 button.accordion-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: none;
+}
+#jobsWrapper #job-description .accordion-item h2 button.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #f27221;
+}
+#jobsWrapper #job-description .accordion-item h2 button.accordion-button::after {
+  content: none;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.mainFormCSS input, .mainFormCSS textarea, .mainFormCSS select {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f4f4f6;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+}
+.mainFormCSS input::-moz-placeholder, .mainFormCSS textarea::-moz-placeholder, .mainFormCSS select::-moz-placeholder {
+  color: #D0D4D7;
+}
+.mainFormCSS input::placeholder, .mainFormCSS textarea::placeholder, .mainFormCSS select::placeholder {
+  color: #D0D4D7;
+}
+.mainFormCSS select {
+  color: #D0D4D7;
+}
+.mainFormCSS select.active {
+  color: #000;
+}
+.mainFormCSS button {
+  background-color: #F37221;
+  border: 1px solid #F37221;
+  font-weight: bold;
+  padding: 5px 50px;
+  border-radius: 20px;
+}
+
+.sec_3 .section_wrapper .content_wrapper .right .contact_info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-block: 20px;
+}
+.sec_3 .section_wrapper .content_wrapper .right .contact_info > * {
+  width: 100%;
+}
+.sec_3 .section_wrapper .content_wrapper .right .contact_info a {
+  color: #f27221;
+  transition: color 0.1s ease-in-out;
+}
+.sec_3 .section_wrapper .content_wrapper .right .contact_info a:hover {
+  color: #F4A662;
+}
+.sec_3 .section_wrapper .content_wrapper .right .contact_info p {
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -492,3 +492,26 @@ gsap.registerPlugin(ScrollTrigger);
         end: "top top",
       },
     });
+
+
+const jobsWrapper = document.getElementById("jobsWrapper");
+const jobTogglers = jobsWrapper.querySelectorAll("[job-target]");
+const jobDesc = jobsWrapper.querySelectorAll("[job-id]");
+if (jobsWrapper && jobTogglers && jobDesc) {
+    jobTogglers.forEach(toggler => {
+        toggler.addEventListener("click", evt => {
+            const target = evt.currentTarget.getAttribute("job-target");
+            const activeTarget = jobsWrapper.querySelector(".job-toggler.active");
+            evt.currentTarget.classList.add("active");
+            if (activeTarget) {
+              activeTarget.classList.remove("active");
+              jobsWrapper.querySelector('[job-status="active"]')?.setAttribute("job-status", "inactive");
+              setTimeout(() => {
+                jobsWrapper.querySelector(`[job-id="${target}"]`)?.setAttribute("job-status", "active");
+              }, 250);
+              return;
+            }
+            jobsWrapper.querySelector(`[job-id="${target}"]`)?.setAttribute("job-status", "active");
+        });
+    });
+}
