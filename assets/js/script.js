@@ -3,10 +3,22 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".left_arrow",
     },
-    slidesPerView: 5,
+    slidesPerView: 1,
     loop: true,
-    autoplay: true
+    autoplay: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+    },
   });
+
 
 var swiper3 = new Swiper(".v_one", {
   direction: "vertical",
@@ -29,20 +41,23 @@ var swiper4 = new Swiper(".v_two", {
   loop: true,
 });
 
-// Disable page scrolling when inside dual_scroll_container
 $(".dual_scroll_container").on("mousewheel DOMMouseScroll", function (e) {
-  var delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
+  // Check if the device width is greater than 991px
+  if (window.innerWidth > 991) {
+    var delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
 
-  if (delta > 0) {
-    swiper3.slideNext();
-    swiper4.slidePrev();
-  } else {
-    swiper3.slidePrev();
-    swiper4.slideNext();
+    if (delta > 0) {
+      swiper3.slideNext();
+      swiper4.slidePrev();
+    } else {
+      swiper3.slidePrev();
+      swiper4.slideNext();
+    }
+
+    return false;
   }
-
-  return false;
 });
+
 
 // Next button click event
 $(".dual_next").on("click", function () {
@@ -65,11 +80,22 @@ jQuery(document).ready(function ($) {
     init: true,
     // Optional parameters
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
 
     autoplay: {
       delay: autoPlayDelay,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
     },
 
     // If we need pagination
@@ -143,6 +169,9 @@ jQuery(document).ready(function ($) {
   });
 });
 
+$('.lines_wrapper, .close, .mobile li a').click(function() {
+  $('.mb_opptions_wrapper').toggleClass('active');
+});
 
 
 
@@ -208,8 +237,8 @@ gsap.registerPlugin(ScrollTrigger);
       opacity: 0,
       scrollTrigger: {
         trigger: ".sec_2",
-        start: "top center",
-        end: "top top",
+        start: "top 70%",
+        end: "top center",
       },
     });
 
@@ -220,8 +249,8 @@ gsap.registerPlugin(ScrollTrigger);
       delay:1,
       scrollTrigger: {
         trigger: ".sec_2",
-        start: "top center",
-        end: "top top",
+        start: "top 70%",
+        end: "top center",
       },
     });
 
@@ -233,9 +262,9 @@ gsap.registerPlugin(ScrollTrigger);
         opacity: 0,
         scrollTrigger: {
           trigger: ".sec2_horse",
-          start: "bottom center",
-          end: "90% top",
-          scrub: true,
+          start: "bottom 70%",
+          end: "90% center",
+          // scrub: true,
           stagger: 0.2 * index, // Adjust the stagger value based on the index
         },
       });
@@ -250,9 +279,42 @@ gsap.registerPlugin(ScrollTrigger);
       },
     });
 
+    
+
     timeline2
       .add(gsap.to(".horse2", { x: 210 }))
       .add(gsap.to(".horse2", { y: 110 }));
+
+      const timeline6 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".horse6",
+          start: "top center",
+          end: "top top",
+          scrub: true,
+        },
+      });
+  
+      
+  
+      timeline6
+        .add(gsap.to(".horse6", { x: 210 }))
+        .add(gsap.to(".horse6", { y: 110 }));
+
+
+    const timeline5 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".horse5",
+        start: "top center",
+        end: "top top",
+        scrub: true,
+      },
+    });
+
+    
+
+    timeline5
+      .add(gsap.to(".horse5", { x: 210 }))
+      .add(gsap.to(".horse5", { y: 110 }));
 
 
     gsap.from(".horsetext", {
@@ -388,8 +450,8 @@ gsap.registerPlugin(ScrollTrigger);
     });
 
     timeline3
-      .add(gsap.to(".horse3", { x: 130 }))
-      .add(gsap.to(".horse3", { y: 240 }));
+      .add(gsap.to(".horse3", { x: 110 }))
+      .add(gsap.to(".horse3", { y: 200 }));
 
     const timeline4 = gsap.timeline({
       scrollTrigger: {
@@ -494,9 +556,26 @@ gsap.registerPlugin(ScrollTrigger);
     });
 
 
+    $(document).ready(function () {
+      function setFontSize() {
+        var containerWidth = $('.sec_1 .content_wrapper').width();
+        var fontSize = containerWidth * 0.16; // 1% of container width
+
+        $('.content_wrapper>h2').css('font-size', fontSize + 'px');
+      }
+
+      // Initial font size setting
+      setFontSize();
+
+      // Update font size on window resize
+      $(window).on('resize', setFontSize);
+    });
+
+
+    
 const jobsWrapper = document.getElementById("jobsWrapper");
-const jobTogglers = jobsWrapper.querySelectorAll("[job-target]");
-const jobDesc = jobsWrapper.querySelectorAll("[job-id]");
+const jobTogglers = jobsWrapper?.querySelectorAll("[job-target]");
+const jobDesc = jobsWrapper?.querySelectorAll("[job-id]");
 if (jobsWrapper && jobTogglers && jobDesc) {
     jobTogglers.forEach(toggler => {
         toggler.addEventListener("click", evt => {

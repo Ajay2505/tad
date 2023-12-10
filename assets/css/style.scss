@@ -43,6 +43,10 @@ header{
     left: 0;
     right: 0;
     z-index: 5;
+    .mobile_nav{
+        display: flex;
+        justify-content: space-between;
+    }
     .left{
         max-width: 180px;
     }
@@ -114,6 +118,90 @@ header{
             gap: 10px;
         }
     }
+    .ham_wrapper{
+        display: none;
+        .lines_wrapper{
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background:linear-gradient(128deg, rgb(250, 169, 101) 21%, rgb(242, 96, 40) 61%) ;
+            cursor: pointer;
+            .line{
+                height: 3px;
+                width: 30px;
+                background-color: $black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                &:before{
+                    content: "";
+                    height:3px;
+                    width: 30px;
+                    background-color: $black;
+                    position: absolute;
+                    bottom: 9px;
+                }
+                &:after{
+                    content: "";
+                    height: 3px;
+                    width: 30px;
+                    background-color: $black;
+                    position: absolute;
+                    top: 9px;
+                }
+            }
+        }
+        .mb_opptions_wrapper{
+            position: fixed;
+            right: 0;
+            top: 0;
+            right: 0;
+            background-color: $orange;
+            width:100%;
+            max-width: 400px;
+            z-index: 99;
+            height: 100%;
+            transition: transform .3s ease-in-out;
+            transform: translateX(100%);
+            padding: 30px;
+            .a{
+                display: flex;
+                text-transform: uppercase;
+                font-size: 16px;
+                margin-block: 20px;
+                .absoulte_block{
+                    background: #000;
+                }
+            }
+            .mobile{
+                list-style: none !important;
+                margin-left: 0;
+                position: relative;
+                padding-top: 100px;
+                flex-direction: column;
+                li{
+                    text-align: left;
+                    a{
+                        font-family: var(--monument-extended-regular);
+                        text-transform: uppercase;
+                        margin-block: 20px;
+                        display: block;
+                        color: #fff;
+                    }
+                }
+                .close{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    cursor: pointer;
+                }
+            }
+            &.active{
+                transform: translateX(0%);
+            }
+        }
+    }
 }
 
 .sec_1{
@@ -128,7 +216,7 @@ header{
         flex-grow: 1;
         .content_wrapper{
             color: #fff;
-            max-width: 640px;
+            max-width: 670px;
             margin-inline: auto;
             position: relative;
             z-index: 2;
@@ -624,7 +712,7 @@ header{
         }
     }
     .lower{
-        padding-bottom: 50px;
+        padding-block: 50px;
         .text_wrapper{
             padding-left: 50px;
             padding-bottom: 20px;
@@ -821,6 +909,7 @@ header{
     padding-top: 96px;
     padding-bottom: 100px;
     position: relative;
+    overflow-x: hidden;
     .section_wrapper {
         .content_wrapper {
             font-size: 14px;
@@ -1067,11 +1156,25 @@ footer{
 ////////////////////////////////////////////////
 
 
+.sec_1.about_us{
+    .section_wrapper{
+        .content_wrapper{
+            max-width: 600px;
+            // @media only screen and (min-width: 1300px) {
+            //     max-width: 620px;
+            // }
+            // @media only screen and (min-width: 1500px) {
+            //     max-width: 650px;
+            // }
+            // @media only screen and (min-width: 1904px) {
+            //     max-width: 750px;
+            // }
+        }
+    }
+}
+
 
 .about_us_sec2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .section_wrapper{
         flex-shrink: 0;
         flex-grow: 1;
@@ -1079,6 +1182,8 @@ footer{
             font-size: 14px;
             position: relative;
             padding-block: 100px;
+            max-width: 800px;
+            margin: 0 auto;
             .right{
                 overflow-x: hidden;
                 h2{
@@ -1155,6 +1260,8 @@ footer{
         .content_wrapper{
             padding-block: 100px;
             position: relative;
+            max-width: 800px;
+            margin: 0 auto;
             .floating_block{
                 position: absolute;
                 top: -100px;
@@ -1241,6 +1348,8 @@ footer{
     .section_wrapper {
         .content_wrapper {
             font-size: 14px;
+            max-width: 1030px;
+            margin: 0 auto;
             .heading_wrapper{
                 position: relative;
                 padding-left: 300px;
@@ -1478,20 +1587,18 @@ section.sec_1.services{
         .content_wrapper{
             max-width: 690px;
             @media only screen and (min-width: 1600px) {
-                max-width: 930px;
+                max-width: 790px;
             }
             h2{
                 line-height: 1;
             }
             .two{
-                text-align: right;
+                text-align: left;
             }
             .diagonal_strip{
-                left: 13%;
-                top: 0;
-                @media only screen and (min-width: 1600px) {
-                    left: 18%;
-                }
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
     }
@@ -1502,6 +1609,14 @@ section.sec_2.services {
     color: $white;
     .section_wrapper{
         .content_wrapper{
+            max-width: 800px;
+            margin: 0 auto;
+            .main_heading{
+                h2{
+                    font-size: $heading_font_size;
+                    font-family: $qualey;
+                }
+            }
             .left{
                 p{
                     position: relative;
@@ -1516,6 +1631,11 @@ section.sec_2.services {
                 }
             }
             .right{
+                height: 100%;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
                 p{
                     position: relative;
                     &::before {
@@ -1537,6 +1657,8 @@ section.sec_2.services {
         .content_wrapper {
             padding-block: 100px;
             position: relative;
+            max-width: 800px;
+            margin: 0 auto;
             .image_wrapper{
                 position: absolute;
                 right: 0;
@@ -1580,7 +1702,7 @@ section.sec_2.services {
                 }
             }
             .heading_wrapper{
-                padding-left: 70px;
+                padding-left: 100px;
                 h2 {
                     font-size: $heading_font_size;
                     font-family: $qualey;
@@ -1594,7 +1716,7 @@ section.sec_2.services {
                 .image_wrapper2{
                     max-width: 300px;
                     img{
-                        transform: translateY(-100px);
+                        transform: translate(-90px, -127px);
                         position: relative;
                         z-index: -1;
                     }
@@ -1619,9 +1741,11 @@ section.sec_2.services {
 }
 
 section.sec_4.services{
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     .section_wrapper {
         .content_wrapper {
+            max-width: 800px;
+            margin: 0 auto;
             .left{
                 h2{
                     margin-bottom: 80px;
@@ -1656,11 +1780,14 @@ section.sec_5.services {
     padding-block: 100px;
     .section_wrapper {
         .content_wrapper {
+            max-width: 800px;
+            margin: 0 auto;
             .heading_wrapper{
                 position: relative;
                 .parent{
-                    max-width: 700px;
+                    max-width: 500px;
                     margin-left: auto;
+                    margin-bottom: 20px;
                     h2{
                         font-size: $heading_font_size;
                         font-family: $qualey;
@@ -1709,15 +1836,25 @@ section.sec_5.services {
         }
     }
     .lower{
+        max-width: 600px;
+        margin: 0 auto;
         .heading_wrapper{
-            max-width: 700px;
+            max-width: 330px;
             margin-left: auto;
             h2{
                 font-size: $heading_font_size;
                 font-family: $qualey;
+                margin-left: auto;
+                &:first-of-type{
+                    padding-left: 50px;
+                }
+                &:nth-of-type(3){
+                    padding-left: 20px;
+                }
             }
         }
         .text_wrapper{
+            padding-left: 0;
             p::before{
                 content: none;
             }
@@ -1736,7 +1873,7 @@ section.sec_3.services {
                     h2{
                         line-height: 1;
                         &:first-of-type{
-                            padding-left: 100px;
+                            padding-left: 81px;
                         }
                     }
                     .image_wrapper{
@@ -1847,6 +1984,10 @@ section#thegrandmasterstroke{
     }
 }
 
+.thegrandmasterstroke_adj{
+    transform: translate(-20px, -27px) !important;
+}
+
 
 //////////////////////////////////////////////////
 ////////////// The Chess Board //////////////////
@@ -1895,12 +2036,6 @@ section#thepaparazzinoise{
             .two{
                 padding-left: 0px;
                 text-align: left;
-            }
-            .diagonal_strip{
-                right: 0;
-                bottom: 0;
-                left: auto;
-                top: auto;
             }
         }
     }
@@ -1964,6 +2099,7 @@ section#clientele {
     }
 }
 
+
 //////////////////////////////////////////////////
 ////////////// Careers //////////////////
 ////////////////////////////////////////////////
@@ -1981,12 +2117,12 @@ section#careers.sec_1 {
             text-align: center;
             padding-left: 0px;
         }
-        .diagonal_strip{
-            right: 0;
-            bottom: 0;
-            left: auto;
-            top: auto;
-        }
+        // .diagonal_strip{
+        //     right: 0;
+        //     bottom: 0;
+        //     left: auto;
+        //     top: auto;
+        // }
     }
 }
 
