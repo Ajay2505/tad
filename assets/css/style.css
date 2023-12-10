@@ -1907,10 +1907,10 @@ section#clientele .section_wrapper .two {
   padding-left: 0px;
 }
 section#clientele .section_wrapper .diagonal_strip {
-  right: 0;
-  bottom: 0;
+  right: -10%;
+  bottom: auto;
   left: auto;
-  top: auto;
+  top: 50%;
 }
 
 .row-gap-4 {
