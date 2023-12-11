@@ -2052,4 +2052,8 @@ section#careers.sec_1 .section_wrapper .two {
 }
 .sec_3 .section_wrapper .content_wrapper .right .contact_info p {
   padding: 0;
+}
+
+.sec_3#intro {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
