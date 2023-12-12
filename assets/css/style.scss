@@ -719,7 +719,7 @@ header{
         }
     }
     .lower{
-        padding-block: 50px;
+        padding-block: 150px;
         .text_wrapper{
             padding-left: 50px;
             padding-bottom: 20px;
@@ -920,6 +920,8 @@ header{
     .section_wrapper {
         .content_wrapper {
             font-size: 14px;
+            max-width: 800px;
+            margin: auto;
             .heading_wrapper{
                 position: relative;
                 h2{
@@ -1709,13 +1711,13 @@ section.sec_2.services {
                 }
             }
             .heading_wrapper{
-                padding-left: 100px;
+                // padding-left: 100px;
                 h2 {
                     font-size: $heading_font_size;
                     font-family: $qualey;
                     line-height: 1;
                     &:nth-of-type(3){
-                        padding-left: 100px;
+                        // padding-left: 100px;
                     }
                 }
             }
@@ -1723,7 +1725,7 @@ section.sec_2.services {
                 .image_wrapper2{
                     max-width: 300px;
                     img{
-                        transform: translate(-90px, -127px);
+                        // transform: translate(-90px, -127px);
                         position: relative;
                         z-index: -1;
                     }
@@ -1732,14 +1734,14 @@ section.sec_2.services {
             .right {
                 .para_wrapper {
                     position: relative;
-                    margin-top: 100px;
+                    margin-top: 20px;
                     &::before {
                         content: "";
                         width: 40px;
                         height: 2px;
                         background-color: $orange;
                         position: absolute;
-                        top: -30px;
+                        top: -20px;
                     }
                 }
             }
@@ -1843,7 +1845,7 @@ section.sec_5.services {
         }
     }
     .lower{
-        max-width: 600px;
+        max-width: 800px;
         margin: 0 auto;
         .heading_wrapper{
             h2{
@@ -2016,9 +2018,9 @@ section#thechessboard{
             }
             .diagonal_strip{
                 right: 0;
-                bottom: 0;
+                bottom: auto;
                 left: auto;
-                top: auto;
+                top: 130px;
             }
         }
     }
@@ -2070,10 +2072,10 @@ section#themoodslayboard {
             }
 
             .diagonal_strip{
-                right: 0;
-                bottom: 0;
+                right: 80px;
+                bottom: auto;
                 left: auto;
-                top: auto;
+                top: 160px;
             }
         }
     }
@@ -2123,12 +2125,9 @@ section#careers.sec_1 {
             text-align: center;
             padding-left: 0px;
         }
-        // .diagonal_strip{
-        //     right: 0;
-        //     bottom: 0;
-        //     left: auto;
-        //     top: auto;
-        // }
+        .diagonal_strip{
+            right: 60px;
+        }
     }
 }
 

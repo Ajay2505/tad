@@ -684,7 +684,7 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   align-self: start;
 }
 .sec_5 .lower {
-  padding-block: 50px;
+  padding-block: 150px;
 }
 .sec_5 .lower .text_wrapper {
   padding-left: 50px;
@@ -871,6 +871,8 @@ header .ham_wrapper .mb_opptions_wrapper.active {
 }
 .sec_8 .section_wrapper .content_wrapper {
   font-size: 14px;
+  max-width: 800px;
+  margin: auto;
 }
 .sec_8 .section_wrapper .content_wrapper .heading_wrapper {
   position: relative;
@@ -1603,28 +1605,21 @@ section.sec_2.services .section_wrapper .content_wrapper .right p::before {
 .services_sec_3 .section_wrapper .content_wrapper .image_wrapper .strip_content .content_itself .text p {
   margin-bottom: 0;
 }
-.services_sec_3 .section_wrapper .content_wrapper .heading_wrapper {
-  padding-left: 100px;
-}
 .services_sec_3 .section_wrapper .content_wrapper .heading_wrapper h2 {
   font-size: clamp(30px, 7vw, 100px);
   font-family: "qualey_freeregular";
   line-height: 1;
 }
-.services_sec_3 .section_wrapper .content_wrapper .heading_wrapper h2:nth-of-type(3) {
-  padding-left: 100px;
-}
 .services_sec_3 .section_wrapper .content_wrapper .left .image_wrapper2 {
   max-width: 300px;
 }
 .services_sec_3 .section_wrapper .content_wrapper .left .image_wrapper2 img {
-  transform: translate(-90px, -127px);
   position: relative;
   z-index: -1;
 }
 .services_sec_3 .section_wrapper .content_wrapper .right .para_wrapper {
   position: relative;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .services_sec_3 .section_wrapper .content_wrapper .right .para_wrapper::before {
   content: "";
@@ -1632,7 +1627,7 @@ section.sec_2.services .section_wrapper .content_wrapper .right p::before {
   height: 2px;
   background-color: #f27221;
   position: absolute;
-  top: -30px;
+  top: -20px;
 }
 
 section.sec_4.services {
@@ -1718,7 +1713,7 @@ section.sec_5.services .section_wrapper .content_wrapper .right .vertical_strip 
   transform: translate(50%, -50px) scaleX(-1);
 }
 section.sec_5.services .lower {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 section.sec_5.services .lower .heading_wrapper h2 {
@@ -1847,9 +1842,9 @@ section#thechessboard .section_wrapper .content_wrapper .two {
 }
 section#thechessboard .section_wrapper .content_wrapper .diagonal_strip {
   right: 0;
-  bottom: 0;
+  bottom: auto;
   left: auto;
-  top: auto;
+  top: 130px;
 }
 
 section#thepaparazzinoise .section_wrapper .content_wrapper {
@@ -1884,10 +1879,10 @@ section#themoodslayboard .section_wrapper .content_wrapper .two {
   text-align: left;
 }
 section#themoodslayboard .section_wrapper .content_wrapper .diagonal_strip {
-  right: 0;
-  bottom: 0;
+  right: 80px;
+  bottom: auto;
   left: auto;
-  top: auto;
+  top: 160px;
 }
 
 section#clientele .section_wrapper .content_wrapper {
@@ -1917,6 +1912,9 @@ section#careers.sec_1 .section_wrapper h2 {
 section#careers.sec_1 .section_wrapper .two {
   text-align: center;
   padding-left: 0px;
+}
+section#careers.sec_1 .section_wrapper .diagonal_strip {
+  right: 60px;
 }
 
 #jobsWrapper .right h4.careers {
