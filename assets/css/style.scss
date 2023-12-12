@@ -71,14 +71,20 @@ header{
             min-width: 80px;
             padding: 7px;
             z-index: 1;
-            background: linear-gradient(128deg, rgb(250, 169, 101) 21%, rgb(242, 96, 40) 61%);
+            background-color: #000;
+            // border: 1px solid $orange;
+            // background: linear-gradient(128deg, rgb(250, 169, 101) 21%, rgb(242, 96, 40) 61%);
             transform-origin: top;
             transform: translateY(100%) scaleY(0);
             transition: transform .2s ease-in;
             a {
                 white-space: nowrap;
                 padding-inline: 5px;
-                color: #000;
+                color: #fff; 
+                transition: color .2s ease-in-out;
+                &:hover {
+                    color: $orange;
+                }               
             }
         }
         &:hover .icon_wrapper {
@@ -100,6 +106,10 @@ header{
                 a{
                     color: $white;
                     font-size: 14px;
+                    transition: color .2s ease-in-out;
+                    &:hover {
+                        color: $orange;
+                    }  
                     &.active{
                         color: $orange;
                         text-decoration: underline;
@@ -447,7 +457,7 @@ header{
                         border: 0.5px solid #b1b1b1;
                         border-left: none;
                         aspect-ratio: 1/1;
-                        padding: 20px;
+                        padding: 50px;
                         transition: all 7s ease-in-out ;
                         &:hover{
                             background: rgb(250,169,101);
@@ -1928,7 +1938,7 @@ section.sec_3.services {
                         .image_wrapper{
                         aspect-ratio: unset;
                             img{
-                                filter: invert(1);
+                                // filter: invert(1);
                                 max-width: 200px;
                                 max-height: auto;
                             }
@@ -1971,14 +1981,14 @@ section#thegrandmasterstroke{
                 line-height: 1;
             }
             .two{
-                padding-left: 100px;
+                // padding-left: 100px;
                 text-align: left;
             }
             .diagonal_strip{
                 right: 0;
-                bottom: 0;
+                bottom: auto;
                 left: auto;
-                top: auto;
+                top: 140px;
             }
         }
     }

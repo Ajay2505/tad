@@ -63,7 +63,7 @@ header .a .absoulte_block {
   min-width: 80px;
   padding: 7px;
   z-index: 1;
-  background: linear-gradient(128deg, rgb(250, 169, 101) 21%, rgb(242, 96, 40) 61%);
+  background-color: #000;
   transform-origin: top;
   transform: translateY(100%) scaleY(0);
   transition: transform 0.2s ease-in;
@@ -71,7 +71,11 @@ header .a .absoulte_block {
 header .a .absoulte_block a {
   white-space: nowrap;
   padding-inline: 5px;
-  color: #000;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+header .a .absoulte_block a:hover {
+  color: #f27221;
 }
 header .a:hover .icon_wrapper {
   transform: none;
@@ -89,6 +93,10 @@ header .middle ul {
 header .middle ul li a {
   color: #fff;
   font-size: 14px;
+  transition: color 0.2s ease-in-out;
+}
+header .middle ul li a:hover {
+  color: #f27221;
 }
 header .middle ul li a.active {
   color: #f27221;
@@ -431,7 +439,7 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   border: 0.5px solid #b1b1b1;
   border-left: none;
   aspect-ratio: 1/1;
-  padding: 20px;
+  padding: 50px;
   transition: all 7s ease-in-out;
 }
 .sec_3 .section_wrapper .content_wrapper .right .carousel_wrapper .image_wrapper:hover {
@@ -1801,7 +1809,6 @@ section.sec_3.services .section_wrapper .content_wrapper .right .carousel_wrappe
   aspect-ratio: unset;
 }
 section.sec_3.services .section_wrapper .content_wrapper .right .carousel_wrapper .image_wrapper img {
-  filter: invert(1);
   max-width: 200px;
   max-height: auto;
 }
@@ -1822,14 +1829,13 @@ section#thegrandmasterstroke .section_wrapper .content_wrapper h2 {
   line-height: 1;
 }
 section#thegrandmasterstroke .section_wrapper .content_wrapper .two {
-  padding-left: 100px;
   text-align: left;
 }
 section#thegrandmasterstroke .section_wrapper .content_wrapper .diagonal_strip {
   right: 0;
-  bottom: 0;
+  bottom: auto;
   left: auto;
-  top: auto;
+  top: 140px;
 }
 
 .thegrandmasterstroke_adj {
