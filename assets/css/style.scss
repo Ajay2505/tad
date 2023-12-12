@@ -928,9 +928,6 @@ header{
                     font-family: $qualey;
                     font-size: $heading_font_size;
                     line-height: 0.8;
-                    &:nth-of-type(2){
-                     padding-left: 70px;   
-                    }   
                 }
                 .diagonal_strip{
                     position: absolute;
@@ -1366,9 +1363,6 @@ footer{
                     font-family: $qualey;
                     font-size: $heading_font_size;
                     line-height: 0.8;
-                    &:nth-of-type(2){
-                     padding-left: 70px;   
-                    }   
                 }
                 .diagonal_strip{
                     position: absolute;

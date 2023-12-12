@@ -882,9 +882,6 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   font-size: clamp(30px, 7vw, 100px);
   line-height: 0.8;
 }
-.sec_8 .section_wrapper .content_wrapper .heading_wrapper h2:nth-of-type(2) {
-  padding-left: 70px;
-}
 .sec_8 .section_wrapper .content_wrapper .heading_wrapper .diagonal_strip {
   position: absolute;
   right: 0;
@@ -1280,9 +1277,6 @@ footer .middle ul li a:hover .absoulte_block, footer .middle ul li div.a:hover .
   font-family: "qualey_freeregular";
   font-size: clamp(30px, 7vw, 100px);
   line-height: 0.8;
-}
-.sec_8.about .section_wrapper .content_wrapper .heading_wrapper h2:nth-of-type(2) {
-  padding-left: 70px;
 }
 .sec_8.about .section_wrapper .content_wrapper .heading_wrapper .diagonal_strip {
   position: absolute;
