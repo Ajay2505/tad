@@ -499,10 +499,7 @@ header{
             overflow: hidden;
             h2{
                 font-family: $qualey;
-                font-size: $heading_font_size;
-                &:nth-of-type(2){
-                 padding-left: 70px;   
-                }
+                font-size: $heading_font_size;                
             }
             .left{
                 h2{
@@ -1796,7 +1793,7 @@ section.sec_5.services {
                 position: relative;
                 .parent{
                     max-width: 500px;
-                    margin-left: auto;
+                    margin-inline: auto;
                     margin-bottom: 20px;
                     h2{
                         font-size: $heading_font_size;
@@ -1849,18 +1846,16 @@ section.sec_5.services {
         max-width: 600px;
         margin: 0 auto;
         .heading_wrapper{
-            max-width: 330px;
-            margin-left: auto;
             h2{
                 font-size: $heading_font_size;
                 font-family: $qualey;
                 margin-left: auto;
-                &:first-of-type{
-                    padding-left: 50px;
-                }
-                &:nth-of-type(3){
-                    padding-left: 20px;
-                }
+                // &:first-of-type{
+                //     padding-left: 50px;
+                // }
+                // &:nth-of-type(3){
+                //     padding-left: 20px;
+                // }
             }
         }
         .text_wrapper{
@@ -1883,7 +1878,8 @@ section.sec_3.services {
                     h2{
                         line-height: 1;
                         &:first-of-type{
-                            padding-left: 81px;
+                            padding-left: 100px;
+                            margin-bottom: 20px;
                         }
                     }
                     .image_wrapper{

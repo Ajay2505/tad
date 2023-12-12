@@ -475,9 +475,6 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   font-family: "qualey_freeregular";
   font-size: clamp(30px, 7vw, 100px);
 }
-.sec_4 .section_wrapper .content_wrapper h2:nth-of-type(2) {
-  padding-left: 70px;
-}
 .sec_4 .section_wrapper .content_wrapper .left h2 {
   color: #f27221;
   font-size: 24px;
@@ -1679,7 +1676,7 @@ section.sec_5.services .section_wrapper .content_wrapper .heading_wrapper {
 }
 section.sec_5.services .section_wrapper .content_wrapper .heading_wrapper .parent {
   max-width: 500px;
-  margin-left: auto;
+  margin-inline: auto;
   margin-bottom: 20px;
 }
 section.sec_5.services .section_wrapper .content_wrapper .heading_wrapper .parent h2 {
@@ -1724,20 +1721,10 @@ section.sec_5.services .lower {
   max-width: 600px;
   margin: 0 auto;
 }
-section.sec_5.services .lower .heading_wrapper {
-  max-width: 330px;
-  margin-left: auto;
-}
 section.sec_5.services .lower .heading_wrapper h2 {
   font-size: clamp(30px, 7vw, 100px);
   font-family: "qualey_freeregular";
   margin-left: auto;
-}
-section.sec_5.services .lower .heading_wrapper h2:first-of-type {
-  padding-left: 50px;
-}
-section.sec_5.services .lower .heading_wrapper h2:nth-of-type(3) {
-  padding-left: 20px;
 }
 section.sec_5.services .lower .text_wrapper {
   padding-left: 0;
@@ -1756,7 +1743,8 @@ section.sec_3.services .section_wrapper .content_wrapper .right .heading_wrapper
   line-height: 1;
 }
 section.sec_3.services .section_wrapper .content_wrapper .right .heading_wrapper h2:first-of-type {
-  padding-left: 81px;
+  padding-left: 100px;
+  margin-bottom: 20px;
 }
 section.sec_3.services .section_wrapper .content_wrapper .right .heading_wrapper .image_wrapper {
   position: absolute;
