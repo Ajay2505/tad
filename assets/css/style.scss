@@ -719,7 +719,7 @@ header{
         }
     }
     .lower{
-        padding-block: 150px;
+        padding-block: 150px;        
         .text_wrapper{
             padding-left: 50px;
             padding-bottom: 20px;
@@ -1841,6 +1841,11 @@ section.sec_5.services {
     .lower{
         max-width: 800px;
         margin: 0 auto;
+        .lower_heading {
+            font-size: $heading_font_size;
+            font-family: $qualey;
+            color: $white;
+        } 
         .heading_wrapper{
             h2{
                 font-size: $heading_font_size;
@@ -2262,4 +2267,12 @@ section#careers.sec_1 {
 
 .sec_3#intro {
     overflow-x: hidden;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.newText25 {
+    opacity: 0;
 }

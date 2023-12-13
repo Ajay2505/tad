@@ -1710,6 +1710,11 @@ section.sec_5.services .lower {
   max-width: 800px;
   margin: 0 auto;
 }
+section.sec_5.services .lower .lower_heading {
+  font-size: clamp(30px, 7vw, 100px);
+  font-family: "qualey_freeregular";
+  color: #fff;
+}
 section.sec_5.services .lower .heading_wrapper h2 {
   font-size: clamp(30px, 7vw, 100px);
   font-family: "qualey_freeregular";
@@ -2042,4 +2047,12 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
 
 .sec_3#intro {
   overflow-x: hidden;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.newText25 {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */

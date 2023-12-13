@@ -555,6 +555,16 @@ gsap.registerPlugin(ScrollTrigger);
       },
     });
 
+    gsap.to(".newText25", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".newText25",
+        start: "top center",
+        end: "top top",
+        scrub: true
+      }
+    })
+
 
     $(document).ready(function () {
       function setFontSize() {
