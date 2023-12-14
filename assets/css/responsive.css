@@ -114,7 +114,7 @@ h2{
         max-width: 150px;
     }
     .sec_8 .section_wrapper .content_wrapper .heading_wrapper .diagonal_strip{
-        transform: scale(0.7);
+        transform: scale(0.5);
         transform-origin: top right;
     }
     section.contact .left .image_wrapper{
@@ -145,10 +145,10 @@ h2{
         padding-block: 100px 0px;
     }
     .sec_8 .section_wrapper .content_wrapper .heading_wrapper h2:nth-of-type(2){
-        padding-left: 10px;
+        padding-left: 0;
     }
     .sec_2 .section_wrapper .content_wrapper .left{
-        padding-left: 65px;
+        padding-left: 0; 
     }
     .about_us_sec3 .section_wrapper .content_wrapper .floating_block{
         transform: scale(0.6);
@@ -209,7 +209,16 @@ h2{
         padding-bottom: 150px;
     }
     section.contact{
-        padding-top: 50px;
+        padding-block: 50px 100px;
+    }
+    .sec_3 .section_wrapper .content_wrapper .right h4 {
+        padding-left: 20px;
+    }
+    .sec_3 .section_wrapper .content_wrapper .right p {
+        padding-left: 20px;
+    }
+    .sec_6 .section_wrapper .content_wrapper h2:nth-of-type(2) {
+        padding-left: 0;
     }
 }
 
