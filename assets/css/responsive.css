@@ -112,6 +112,7 @@ h2{
     }
     .sec_1 .section_wrapper .content_wrapper .diagonal_strip{
         max-width: 150px;
+        top: 230px;
     }
     .sec_8 .section_wrapper .content_wrapper .heading_wrapper .diagonal_strip{
         transform: scale(0.5);
