@@ -1449,6 +1449,7 @@ footer{
                         font-weight: 600;
                         font-family: $poppins;
                         text-transform: uppercase;
+                        min-height: 55px;
                     }
                     p{
                         font-size: 14px;
@@ -1476,8 +1477,12 @@ footer{
                         gap: 10px;
                         font-weight: bold;
                         font-size: 14px;
+                        transition: color .2s ease-in;
                         span{
                             max-width: 50px;
+                        }
+                        &:hover {
+                            color: $orange;
                         }
                     }
                 }

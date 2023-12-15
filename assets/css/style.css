@@ -1363,6 +1363,7 @@ footer .middle ul li a:hover .absoulte_block, footer .middle ul li div.a:hover .
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+  min-height: 55px;
 }
 .sec_8.about .section_wrapper .content_wrapper .columns_wrapper .card_wrapper p {
   font-size: 14px;
@@ -1390,9 +1391,13 @@ footer .middle ul li a:hover .absoulte_block, footer .middle ul li div.a:hover .
   gap: 10px;
   font-weight: bold;
   font-size: 14px;
+  transition: color 0.2s ease-in;
 }
 .sec_8.about .section_wrapper .content_wrapper .columns_wrapper .card_wrapper a.cta span {
   max-width: 50px;
+}
+.sec_8.about .section_wrapper .content_wrapper .columns_wrapper .card_wrapper a.cta:hover {
+  color: #f27221;
 }
 
 section.contact {
