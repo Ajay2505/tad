@@ -538,10 +538,10 @@
                         <div class="swiper-slide">
                           <div class="card_wrapper">
                             <img src="assets/images/three-carousel/slide-1.png" class="hero" alt="">
-                            <h3 class="heading">Case Study 1</h3>
-                            <p class="max-lines">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque at autem dolor ad, quas cum animi quidem adipisci corporis architecto!</p>
+                            <h3 class="heading">Trilight</h3>
+                            <p class="max-lines">After sitting with the Chief Architect Sridhar of Team One for over 2 months strategising a new lifestyle approach for the citizens of Hyderabad, a starry approach was conceptualised to create a unique name that never existed in the global Dictionary.</p>
                             <p class="date">SEPTEMBER 28, 2023</p>
-                            <a href="#" class="cta">READ MORE<span><img src="assets/images/arrow.svg" alt=""
+                            <a href="javascript:void(0)" data-case-study="assets/case-studies/Trilight.pdf" data-bs-toggle="modal" data-bs-target="#exampleModal" class="cta">View Case Study<span><img src="assets/images/arrow.svg" alt=""
                                   srcset=""></span></a>
                           </div>
                         </div>
@@ -551,7 +551,7 @@
                             <h3 class="heading">Case Study 2</h3>
                             <p class="max-lines">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque at autem dolor ad, quas cum animi quidem adipisci corporis architecto!</p>
                             <p class="date">SEPTEMBER 28, 2023</p>
-                            <a href="#" class="cta">READ MORE<span><img src="assets/images/arrow.svg" alt=""
+                            <a href="#" class="cta">View Case Study<span><img src="assets/images/arrow.svg" alt=""
                                   srcset=""></span></a>
                           </div>
                         </div>
@@ -561,7 +561,7 @@
                             <h3 class="heading">Case Study 3</h3>
                             <p class="max-lines">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque at autem dolor ad, quas cum animi quidem adipisci corporis architecto!</p>
                             <p class="date">SEPTEMBER 28, 2023</p>
-                            <a href="#" class="cta">READ MORE<span><img src="assets/images/arrow.svg" alt=""
+                            <a href="#" class="cta">View Case Study<span><img src="assets/images/arrow.svg" alt=""
                                   srcset=""></span></a>
                           </div>
                         </div>
@@ -571,7 +571,7 @@
                             <h3 class="heading">Case Study 4</h3>
                             <p class="max-lines">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque at autem dolor ad, quas cum animi quidem adipisci corporis architecto!</p>
                             <p class="date">SEPTEMBER 28, 2023</p>
-                            <a href="the-moodboard-slay.html" class="cta">READ MORE<span><img src="assets/images/arrow.svg" alt=""
+                            <a href="the-moodboard-slay.html" class="cta">View Case Study<span><img src="assets/images/arrow.svg" alt=""
                                   srcset=""></span></a>
                           </div>
                         </div>
@@ -581,7 +581,7 @@
                             <h3 class="heading">Case Study 5</h3>
                             <p class="max-lines">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque at autem dolor ad, quas cum animi quidem adipisci corporis architecto!</p>
                             <p class="date">SEPTEMBER 28, 2023</p>
-                            <a href="the-paparazzi-noise.html" class="cta">READ MORE<span><img src="assets/images/arrow.svg" alt=""
+                            <a href="the-paparazzi-noise.html" class="cta">View Case Study<span><img src="assets/images/arrow.svg" alt=""
                                   srcset=""></span></a>
                           </div>
                         </div>                        
@@ -601,7 +601,7 @@
               </div>
           </div>
         </div>
-      </section>    
+      </section>  
 
       <section class="contact">
         <div class="section_wrapper">
@@ -720,6 +720,30 @@
       </footer>
 
     </main>
+
+    <a href="#" id="hiddenAnchor"></a>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Just One more step!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="caseStudyForm" class="mainFormCSS">
+              <input type="text" name="name" placeholder="Full Name">
+              <input type="email" name="email" placeholder="Email">
+              <input type="tel" name="phone" placeholder="Contact Number">
+              <textarea name="message" rows="3" placeholder="Message"></textarea>
+              <button type="submit" name="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
       
 

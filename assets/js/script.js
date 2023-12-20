@@ -604,3 +604,22 @@ if (jobsWrapper && jobTogglers && jobDesc) {
         });
     });
 }
+
+
+const caseStudyPopUpBtns = document.querySelectorAll('[data-bs-target="#exampleModal"]');
+let currentCasePath = "";
+if (caseStudyPopUpBtns && caseStudyPopUpBtns.length) {
+  caseStudyPopUpBtns.forEach(btn => {
+    btn.addEventListener("click", evt => {
+      currentCasePath = evt.currentTarget.getAttribute("data-case-study") || "/";   
+    });
+  })
+}
+
+const caseStudyForm = document.getElementById("caseStudyForm");
+if (caseStudyForm) {
+  caseStudyForm.addEventListener("submit", evt => {
+    evt.preventDefault();   
+    window.open(currentCasePath);
+  });
+}
