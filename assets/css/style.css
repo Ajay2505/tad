@@ -1548,6 +1548,7 @@ section.sec_2.services .section_wrapper .content_wrapper .right img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  max-height: 353px;
 }
 section.sec_2.services .section_wrapper .content_wrapper .right p {
   position: relative;
@@ -2071,6 +2072,12 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
   max-height: 240px;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out;
+}
+.readMoreBlock .allContent.all-1 {
+  max-height: 230px;
+}
+.readMoreBlock .allContent.md {
+  max-height: 170px;
 }
 .readMoreBlock .allContent.sm {
   max-height: 130px;

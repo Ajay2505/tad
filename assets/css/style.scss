@@ -1648,6 +1648,7 @@ section.sec_2.services {
                 img{
                     height: 100%;
                     object-fit: cover;
+                    max-height: 353px;
                 }
                 p{
                     position: relative;
@@ -2292,6 +2293,12 @@ section#careers.sec_1 {
         max-height: 240px;
         overflow: hidden;
         transition: max-height .4s ease-in-out;
+        &.all-1 {
+            max-height: 230px;
+        }
+        &.md {
+            max-height: 170px;
+        }
         &.sm {
             max-height: 130px;
         }
