@@ -2065,4 +2065,32 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
 
 .newText25 {
   opacity: 0;
+}
+
+.readMoreBlock .allContent {
+  max-height: 240px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+.readMoreBlock .allContent.sm {
+  max-height: 130px;
+}
+.readMoreBlock .allContent.sm-1 {
+  max-height: 120px;
+}
+.readMoreBlock .allContent.xs {
+  max-height: 80px;
+}
+.readMoreBlock input[type=checkbox]:checked + .allContent {
+  max-height: 900px;
+}
+.readMoreBlock input[type=checkbox]:checked + .allContent + label::after {
+  content: "less";
+}
+.readMoreBlock label {
+  color: #f27221;
+  cursor: pointer;
+}
+.readMoreBlock label::after {
+  content: "more";
 }/*# sourceMappingURL=style.css.map */

@@ -2286,3 +2286,33 @@ section#careers.sec_1 {
 .newText25 {
     opacity: 0;
 }
+
+.readMoreBlock {
+    .allContent {
+        max-height: 240px;
+        overflow: hidden;
+        transition: max-height .4s ease-in-out;
+        &.sm {
+            max-height: 130px;
+        }
+        &.sm-1 {
+            max-height: 120px;
+        }
+        &.xs {
+            max-height: 80px;
+        }
+    }
+    input[type="checkbox"]:checked + .allContent {
+        max-height: 900px;
+    }
+    input[type="checkbox"]:checked + .allContent + label::after {
+        content: "less";
+    }
+    label {
+        color: $orange;
+        cursor: pointer;
+        &::after {
+            content: "more";
+        }
+    }    
+}
