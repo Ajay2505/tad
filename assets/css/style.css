@@ -2100,4 +2100,8 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
 }
 .readMoreBlock label::after {
   content: "more";
+}
+
+.sec_1 .section_wrapper .content_wrapper .diagonal_strip.about_page {
+  top: 30px;
 }/*# sourceMappingURL=style.css.map */
