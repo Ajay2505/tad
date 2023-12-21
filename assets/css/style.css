@@ -258,8 +258,8 @@ header .ham_wrapper .mb_opptions_wrapper.active {
 }
 .sec_1 .section_wrapper .content_wrapper .diagonal_strip {
   position: absolute;
-  right: -45px;
-  top: 30px;
+  right: -25px;
+  top: 140px;
   max-width: 250px;
   z-index: 1;
 }

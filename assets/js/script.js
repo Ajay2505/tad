@@ -620,6 +620,7 @@ const caseStudyForm = document.getElementById("caseStudyForm");
 if (caseStudyForm) {
   caseStudyForm.addEventListener("submit", evt => {
     evt.preventDefault();   
+    document.querySelector("#exampleModal .btn-close").click();
     window.open(currentCasePath);
   });
 }
