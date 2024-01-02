@@ -1740,6 +1740,7 @@ section.sec_5.services .lower .text_wrapper p::before {
 
 section.sec_3.services {
   padding-top: 100px;
+  overflow-x: hidden;
 }
 section.sec_3.services .section_wrapper .content_wrapper .right .heading_wrapper {
   position: relative;

@@ -4,6 +4,20 @@ h2{
     line-height: 1;
 }
 
+@media only screen and (max-width: 1090px) {
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+        right: -120px;
+        transform: translateY(10%);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+        z-index: -1;
+        right: 0;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .ham_wrapper {
         display: block !important;
@@ -96,7 +110,9 @@ h2{
     section.sec_5.services .lower .heading_wrapper h2:first-of-type{
         padding-left: 0px;
     }
-
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+        transform: scale(.7);
+    }
 }
 
 
@@ -110,13 +126,26 @@ h2{
     .sec_1 .section_wrapper .content_wrapper .diagonal_strip .strip_content .content_itself img{
         max-width: 18px;
     }
-    .sec_1 .section_wrapper .content_wrapper .diagonal_strip{
-        max-width: 150px;
-        top: 230px;
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip{
+        transform: scale(.6) translateY(20%);
+        top: -30px;
+        right: -30px;
+    }
+    section#thegrandmasterstroke .section_wrapper .content_wrapper .diagonal_strip {
+        top: 20px;
+    }
+    section#thechessboard .section_wrapper .content_wrapper .diagonal_strip {
+        top: -40px;
+    }
+    section#themoodslayboard .section_wrapper .content_wrapper .diagonal_strip {
+        top: 30px;
     }
     .sec_8 .section_wrapper .content_wrapper .heading_wrapper .diagonal_strip{
         transform: scale(0.5);
         transform-origin: top right;
+    }
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+        transform: scale(.5);
     }
     section.contact .left .image_wrapper{
         right: -10px;
@@ -203,6 +232,10 @@ h2{
         right: 0;
         transform: translate(0%, -238px) scale(0.6);
     }
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+        transform: scale(.6);
+        top: 60px;
+    }
     section.sec_2.services .section_wrapper .content_wrapper .main_heading h2{
         padding-left: 65px;
     }
@@ -223,6 +256,14 @@ h2{
     }
     .sec_8 {
         padding-top: 40px;
+    }
+    section#clientele .section_wrapper .diagonal_strip {
+        right: 0;
+        top: 100%;
+    }
+    .sec_1 .section_wrapper .content_wrapper .diagonal_strip.awards_page {
+        right: 0;
+        transform: scale(.6);
     }
 }
 
