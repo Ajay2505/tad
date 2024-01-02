@@ -245,11 +245,17 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   display: inline-block;
+  padding-bottom: 30px;
 }
 .sec_1 .section_wrapper .content_wrapper .three {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 600px) {
+  .sec_1 .section_wrapper .content_wrapper .three {
+    align-items: center;
+  }
 }
 .sec_1 .section_wrapper .content_wrapper .four {
   display: flex;
@@ -258,8 +264,8 @@ header .ham_wrapper .mb_opptions_wrapper.active {
 }
 .sec_1 .section_wrapper .content_wrapper .diagonal_strip {
   position: absolute;
-  right: -25px;
-  top: 140px;
+  right: -35px;
+  top: 170px;
   max-width: 250px;
   z-index: 1;
 }
@@ -2098,4 +2104,14 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
 
 .sec_1 .section_wrapper .content_wrapper .diagonal_strip.about_page {
   top: 30px;
+}
+
+section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+  right: -180px;
+  transform: translateY(-20%);
+}
+
+.sec_1 .section_wrapper .content_wrapper .diagonal_strip.awards_page {
+  top: -20px;
+  right: -85px;
 }/*# sourceMappingURL=style.css.map */

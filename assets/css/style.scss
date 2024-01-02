@@ -252,12 +252,16 @@ header{
                     font-family: $poppins;
                     font-size: 12px;
                     display: inline-block;
+                    padding-bottom: 30px;
                 }
             }
             .three{
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-end;
+                @media only screen and (max-width: 600px) {
+                    align-items: center;
+                }
             }
             .four{
                 display: flex;
@@ -268,8 +272,8 @@ header{
                 position: absolute;
                 // right: 0;
                 // top: 60px;
-                right: -25px;
-                top: 140px;
+                right: -35px;
+                top: 170px;
                 max-width: 250px;
                 z-index: 1;
                 .strip_content{
@@ -2328,4 +2332,19 @@ section#careers.sec_1 {
 
 .sec_1 .section_wrapper .content_wrapper .diagonal_strip.about_page {
     top: 30px;
+}
+
+
+//////////////////////////////////////////////////
+////////////// 3D Presentation //////////////////
+////////////////////////////////////////////////
+
+section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
+    right: -180px;
+    transform: translateY(-20%);
+}
+
+.sec_1 .section_wrapper .content_wrapper .diagonal_strip.awards_page {
+    top: -20px;
+    right: -85px;
 }
