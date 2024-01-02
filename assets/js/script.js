@@ -37,7 +37,6 @@ var swiper4 = new Swiper(".v_two", {
   },
   slidesPerView: 2,
   spaceBetween: 30,
- 
   loop: true,
 });
 
@@ -178,6 +177,8 @@ $('.lines_wrapper, .close, .mobile li a').click(function() {
 // gsap-start
 
 gsap.registerPlugin(ScrollTrigger);
+
+  
 
     gsap.from("header", {
       opacity: 0,

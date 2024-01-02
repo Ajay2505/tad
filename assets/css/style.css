@@ -741,30 +741,24 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   display: none;
 }
 .sec_6 .section_wrapper .dual_scroll_container .left_carousel .v_one {
-  max-height: 600px;
+  max-height: 750px;
 }
 .sec_6 .section_wrapper .dual_scroll_container .left_carousel .swiper-slide {
   color: #fff;
 }
-.sec_6 .section_wrapper .dual_scroll_container .left_carousel .swiper-slide .sneak_wrapper {
-  height: 100%;
-}
 .sec_6 .section_wrapper .dual_scroll_container .left_carousel .swiper-slide .sneak_wrapper img {
-  height: calc(100% - 25px);
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .sec_6 .section_wrapper .dual_scroll_container .right_carousel .v_two {
-  max-height: 600px;
+  max-height: 750px;
 }
 .sec_6 .section_wrapper .dual_scroll_container .right_carousel .swiper-slide {
   color: #fff;
 }
-.sec_6 .section_wrapper .dual_scroll_container .right_carousel .swiper-slide .sneak_wrapper {
-  height: 100%;
-}
 .sec_6 .section_wrapper .dual_scroll_container .right_carousel .swiper-slide .sneak_wrapper img {
-  height: calc(100% - 25px);
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }

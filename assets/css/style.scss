@@ -780,14 +780,15 @@ header{
             }
             .left_carousel{
                .v_one{
-                max-height: 600px;
+                max-height: 750px;
                }
                 .swiper-slide {
                     color: #fff;
                     .sneak_wrapper {
-                        height: 100%;
+                        // height: 100%;
                         img {
-                            height: calc(100% - 25px);
+                            height: auto;
+                            // height: calc(100% - 25px);
                             object-fit: cover;
                         }
                     }
@@ -795,14 +796,15 @@ header{
             }
             .right_carousel{
                 .v_two{
-                 max-height: 600px;
+                 max-height: 750px;
                 }
                 .swiper-slide{
                     color: #fff;
                     .sneak_wrapper {
-                        height: 100%;
+                        // height: 100%;
                         img {
-                            height: calc(100% - 25px);
+                            height: auto;
+                            // height: calc(100% - 25px);
                             object-fit: cover;
                         }
                     }
