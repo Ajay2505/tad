@@ -282,7 +282,7 @@ header .ham_wrapper .mb_opptions_wrapper.active {
   width: 100%;
 }
 .sec_1 .section_wrapper .content_wrapper .diagonal_strip .strip_content .content_itself img {
-  max-width: 30px;
+  max-width: 40px;
   justify-self: end;
   align-self: start;
 }
@@ -2115,4 +2115,12 @@ section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
 .sec_1 .section_wrapper .content_wrapper .diagonal_strip.awards_page {
   top: -20px;
   right: -85px;
+}
+
+.about_us_sec3 .section_wrapper .content_wrapper .floating_block .left2 .strip_content .content_itself img.img {
+  max-width: 45px;
+}
+
+.sec_4 .section_wrapper .content_wrapper .floating_block .left2 .strip_content .content_itself img.img {
+  max-width: 45px;
 }/*# sourceMappingURL=style.css.map */
