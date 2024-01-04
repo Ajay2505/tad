@@ -291,6 +291,13 @@ h2{
     .sec_5 .lower {
         padding-block: 100px;
     }
+    .sec_1 .section_wrapper .content_wrapper .diagonal_strip.about_page {
+        top: -40px;
+        right: -30px;
+    }
+    .sec_8.about {
+        padding-top: 40px;
+    }
 }
 
 
