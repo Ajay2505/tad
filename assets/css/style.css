@@ -25,6 +25,10 @@ a {
   color: inherit;
 }
 
+p {
+  font-size: 14px;
+}
+
 header {
   padding-block: 20px;
   padding-inline: 10px;
@@ -1624,7 +1628,7 @@ section.sec_2.services .section_wrapper .content_wrapper .right p::before {
 }
 .services_sec_3 .section_wrapper .content_wrapper .right .para_wrapper {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .services_sec_3 .section_wrapper .content_wrapper .right .para_wrapper::before {
   content: "";
@@ -2070,24 +2074,21 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
 }
 
 .readMoreBlock .allContent {
-  max-height: 240px;
+  max-height: 210px;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out;
-}
-.readMoreBlock .allContent.all-1 {
-  max-height: 230px;
 }
 .readMoreBlock .allContent.md {
   max-height: 170px;
 }
 .readMoreBlock .allContent.sm {
-  max-height: 130px;
+  max-height: 126px;
 }
 .readMoreBlock .allContent.sm-1 {
-  max-height: 120px;
+  max-height: 105px;
 }
 .readMoreBlock .allContent.xs {
-  max-height: 80px;
+  max-height: 84px;
 }
 .readMoreBlock input[type=checkbox]:checked + .allContent {
   max-height: 900px;
@@ -2127,4 +2128,8 @@ section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
 
 .grayImg {
   filter: grayscale(1);
+}
+
+.allContent.padding_top {
+  padding-top: 42px;
 }/*# sourceMappingURL=style.css.map */

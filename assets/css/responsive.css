@@ -113,6 +113,9 @@ h2{
     section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
         transform: scale(.7);
     }
+    section.sec_3.services {
+        padding-top: 150px;
+    }
 }
 
 
@@ -135,6 +138,9 @@ h2{
         transform: scale(.6) translate(40%, 20%);
         top: -100px;
     }    
+    section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.paparazzi {
+        top: -30px;
+    }
     section#thegrandmasterstroke .section_wrapper .content_wrapper .diagonal_strip {
         top: 20px;
     }
@@ -262,7 +268,7 @@ h2{
         padding-top: 40px;
     }
     section#clientele .section_wrapper .diagonal_strip {
-        right: -40px;
+        right: 20px;
         top: 10%;
     }
     .sec_1 .section_wrapper .content_wrapper .diagonal_strip.awards_page {
@@ -273,12 +279,15 @@ h2{
     .sec_4 .section_wrapper .content_wrapper .floating_block {
         bottom: -100px;
     }
+    section.sec_2.services .section_wrapper .content_wrapper .right p {
+        margin-top: 42px;
+    }    
+    /* .readMoreBlock .allContent.sm-1 {
+        max-height: 130px;
+    }
     .readMoreBlock .allContent.sm {
-        max-height: 140px;
-    }
-    .readMoreBlock .allContent {
-        max-height: 230px;
-    }
+        max-height: 143px;
+    } */
     .sec_5 .lower {
         padding-block: 100px;
     }

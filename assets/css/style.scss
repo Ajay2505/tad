@@ -35,6 +35,10 @@ a{
     color: inherit;
 }
 
+p {
+    font-size: 14px;
+}
+
 header{
     padding-block: 20px;
     padding-inline: 10px;
@@ -1745,7 +1749,7 @@ section.sec_2.services {
             .right {
                 .para_wrapper {
                     position: relative;
-                    margin-top: 20px;
+                    margin-top: 30px;
                     &::before {
                         content: "";
                         width: 40px;
@@ -2297,23 +2301,20 @@ section#careers.sec_1 {
 
 .readMoreBlock {
     .allContent {
-        max-height: 240px;
+        max-height: 210px;
         overflow: hidden;
         transition: max-height .4s ease-in-out;
-        &.all-1 {
-            max-height: 230px;
-        }
         &.md {
             max-height: 170px;
         }
         &.sm {
-            max-height: 130px;
+            max-height: 126px;
         }
         &.sm-1 {
-            max-height: 120px;
+            max-height: 105px;
         }
         &.xs {
-            max-height: 80px;
+            max-height: 84px;
         }
     }
     input[type="checkbox"]:checked + .allContent {
@@ -2360,4 +2361,8 @@ section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
 
 .grayImg {
     filter: grayscale(1);
+}
+
+.allContent.padding_top {
+    padding-top: 42px;
 }
