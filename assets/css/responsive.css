@@ -124,7 +124,7 @@ h2{
         font-size: 11px;
     }
     .sec_1 .section_wrapper .content_wrapper .diagonal_strip .strip_content .content_itself img{
-        max-width: 18px;
+        max-width: 40px;
     }
     section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip{
         transform: scale(.6) translateY(20%);
@@ -264,6 +264,9 @@ h2{
     .sec_1 .section_wrapper .content_wrapper .diagonal_strip.awards_page {
         right: 0;
         transform: scale(.6);
+    }
+    .sec_4 .section_wrapper .content_wrapper .floating_block {
+        bottom: -100px;
     }
 }
 
