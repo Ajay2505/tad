@@ -1586,6 +1586,16 @@ section.contact{
                 color: #D0D4D7;
             }
         }
+        /* Target the specific number input and hide the spin buttons */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* For Firefox, you may need this additional CSS rule */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
         button{
             background-color: #F37221;
             border: 1px solid #F37221;
@@ -2252,6 +2262,16 @@ section#careers.sec_1 {
             color: #D0D4D7;
         }
     }
+    /* Target the specific number input and hide the spin buttons */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* For Firefox, you may need this additional CSS rule */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
     select {
         color: #D0D4D7;
         &.active {
@@ -2365,4 +2385,23 @@ section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
 
 .allContent.padding_top {
     padding-top: 42px;
+}
+
+body form .error_msg {
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+body form .error_msg p.message {
+    padding-inline: 13px;
+    font-size: 13px;
+    color: #FF0000;
+}
+
+body form .error_msg.active {
+    opacity: 1;
 }

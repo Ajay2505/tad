@@ -606,6 +606,65 @@ if (jobsWrapper && jobTogglers && jobDesc) {
     });
 }
 
+const validatePhone = document.querySelectorAll(".validatePhone");
+if (validatePhone && validatePhone.length) {
+  validatePhone.forEach(input => {
+    input.addEventListener("blur", evt => {
+      const nextSibling = evt.currentTarget.nextElementSibling;      
+      if (evt.currentTarget.value.length !== 10) {
+          nextSibling.classList.add("active");
+          nextSibling.querySelector(".message").innerText = "Please provide a valid Mobile Number!";
+      } else {
+        nextSibling.classList.remove("active");
+      }
+    })
+  });
+}
+
+const contectForm = document.getElementById("contectForm");
+if (contectForm) {
+  contectForm.addEventListener("submit", async evt => {
+    evt.preventDefault();
+    if (evt.currentTarget.querySelector(".error_msg.active")) {
+      return;
+    }
+
+    evt.target.button.disabled = true;
+
+    const formData = new FormData(evt.target);
+    const formDataObject = {};
+  
+    formData.forEach((value, key) => {
+      formDataObject[key] = value;
+    });
+
+    const sendToEmail = "ajaykumar.tetramind@gmail.com";
+    const clientName = "Ajay";
+    const emailBody = "Will do!";
+    const subject = "Tad Global";
+
+    try {
+      const res = await fetch("/contact-form.php", {
+        method: 'POST',
+        body: JSON.stringify({email: sendToEmail, name: clientName, subject, emailBody }),
+        headers: {
+          "Content-Type": "application/json",
+        }
+      });
+
+      if (res.ok) {
+        console.log(res);
+      } else {
+        console.error(res);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+    
+    evt.target.button.disabled = false;
+  });
+}
+
 
 const caseStudyPopUpBtns = document.querySelectorAll('[data-bs-target="#exampleModal"]');
 let currentCasePath = "";

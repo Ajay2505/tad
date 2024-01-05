@@ -1474,6 +1474,8 @@ section.contact .right {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  /* Target the specific number input and hide the spin buttons */
+  /* For Firefox, you may need this additional CSS rule */
 }
 section.contact .right p {
   color: #000;
@@ -1493,6 +1495,14 @@ section.contact .right input::-moz-placeholder, section.contact .right textarea:
 }
 section.contact .right input::placeholder, section.contact .right textarea::placeholder {
   color: #D0D4D7;
+}
+section.contact .right input[type=number]::-webkit-inner-spin-button,
+section.contact .right input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+section.contact .right input[type=number] {
+  -moz-appearance: textfield;
 }
 section.contact .right button {
   background-color: #F37221;
@@ -2011,6 +2021,10 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
   width: fit-content;
 }
 
+.mainFormCSS {
+  /* Target the specific number input and hide the spin buttons */
+  /* For Firefox, you may need this additional CSS rule */
+}
 .mainFormCSS input, .mainFormCSS textarea, .mainFormCSS select {
   display: block;
   width: 100%;
@@ -2026,6 +2040,14 @@ section#careers.sec_1 .section_wrapper .diagonal_strip {
 }
 .mainFormCSS input::placeholder, .mainFormCSS textarea::placeholder, .mainFormCSS select::placeholder {
   color: #D0D4D7;
+}
+.mainFormCSS input[type=number]::-webkit-inner-spin-button,
+.mainFormCSS input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mainFormCSS input[type=number] {
+  -moz-appearance: textfield;
 }
 .mainFormCSS select {
   color: #D0D4D7;
@@ -2128,4 +2150,23 @@ section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
 
 .allContent.padding_top {
   padding-top: 42px;
+}
+
+body form .error_msg {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+body form .error_msg p.message {
+  padding-inline: 13px;
+  font-size: 13px;
+  color: #FF0000;
+}
+
+body form .error_msg.active {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
