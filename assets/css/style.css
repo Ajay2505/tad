@@ -2126,10 +2126,6 @@ section.sec_1.services .section_wrapper .content_wrapper .diagonal_strip.pre {
   max-width: 45px;
 }
 
-.grayImg {
-  filter: grayscale(1);
-}
-
 .allContent.padding_top {
   padding-top: 42px;
 }/*# sourceMappingURL=style.css.map */
