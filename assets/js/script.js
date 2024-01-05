@@ -644,7 +644,7 @@ if (contectForm) {
     const subject = "Tad Global";
 
     try {
-      const res = await fetch("/contact-form.php", {
+      const res = await fetch("/assets/contact-form.php", {
         method: 'POST',
         body: JSON.stringify({email: sendToEmail, name: clientName, subject, emailBody }),
         headers: {
